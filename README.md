@@ -1,4 +1,4 @@
-# <div align="center">💎 "ein-Stein" (One-Stone) Quasicrystals 💎 
+# <div align="center">💎 Einstein ("ein-Stein") Quasicrystals 💎 
 ## <div align="center"><i>A Lean 4 Certified Proof of 3D Aperiodic Einstein Quasicrystals by Triviality of the Projection Kernel.</i>
 
 ## <div align="center">📌 Abstract
@@ -39,7 +39,7 @@ We implemented a spatial interlock and overlap validation script in JavaScript t
 
 ### 📽️ Projection Visualizer
 
-![Einstein Quasiscrystal Projection](https://github.com/AEjonanonymous/ein-Stein-Quasicrystal/blob/main/ein_stein_quasicrystal.PNG)
+![Einstein Quasiscrystal Projection](https://github.com/AEjonanonymous/Einstein-Quasicrystals/blob/main/ein_stein_quasicrystal.PNG)
 
 `ein_stein_quasicrystal.PNG`: What we are looking at is no longer a standard 2D shape forced into 3D, but a true 3D aperiodic Einstein Quasicrystal.
 
