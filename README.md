@@ -9,6 +9,15 @@ Keywords: Mathematics, Discrete Geometry, 3D Aperiodic Monotiles, Einstein Tile,
 
 **Keywords:** Mathematics, Discrete Geometry, 3D Aperiodic Monotiles, Einstein Tile, Hat Tile, de Bruijn Cut-and-Project Framework, Delaunay Triangulation, Meyer Set, Quasicrystals, Formal Verification, Interactive Theorem Proving, Lean 4, Injective Proof, Trivial Kernel.
 
+## The Core Problem & Intuition
+
+In mathematics, the Einstein problem asked whether a single, connected shape (a monotile) could tile a two-dimensional plane completely without any gaps or overlaps, but only in a non-periodic (aperiodic) pattern, meaning the pattern can never repeat, no matter how far it extends. Despite the name, it has nothing to do with Albert Einstein. Instead, it comes from the German word "ein Stein," which translates to one stone (or one shape). The 2D Einstein tile, specifically the "hat" and "spectre" discovered in 2022–2023, solved the long-standing aperiodic monotile problem for flat surfaces. 
+
+* **The 3D Gap:** People have easily extruded 2D hat or spectre tiles into 3D prisms (giving them height, like blocks or cookie cutters). However, simply extruding 2D tiles into 3D prisms creates hollow columns, not a true 3D volumetric monotile. While some partial progress or constrained variations exist, a clean, elegant 3D equivalent of the “hat” or “spectre” remains an unsettled problem in discrete geometry [4,5].
+
+* **Our Intuition:** In aperiodic mathematics, 3D quasicrystalline structures are often mathematically defined as 3D projections of a higher-dimensional hypercubic lattice. Instead of forcing the 2D hat into 3D, we look at what 4D-to-3D projection grid would naturally yield a hat-like cross-section
+
+
 ## 📐 The 4-Step Computational Pipeline
 
 To generate true 3D volumetric structures without hollow sides, our pipeline executes the following:
