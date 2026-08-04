@@ -53,7 +53,17 @@ We implemented a spatial interlock and overlap validation script in JavaScript t
 
 **Verify in Browser:** 💻 [`EinsteinQuasicrystalKernelTriviality.lean`](https://live.lean-lang.org/#project=mathlib-stable&codez=JYWwDg9gTgLgBAWQIYwBYBtgCMBQOB2E%2BAxhOAK4xJboCmcAzrcTMEXgAIDatAHjAF0cDGFHItyUegBkUrYrQAKEYPhgAWACJwA7qlpSccOLwCMcAFxxAJIRGTAJks27vAMxPbx3uo92AJgbAAG6qAOZwmszAftR0AKIAjpw8%2FEIiYhJScMqqMK7aega0dmC8ToC4hCUAnhUlAF61xgFQwWERUTE0tIl4AQBmjAmw7lbllgC8cABKtEjoAHQMQ%2FCuOP2DsI6jE9OzC0uwcPa9tANgUBAAVgASZHAAFEFOsjDySipqWgCUTjlq%2BTs7ABvOClHaPeZmCo%2FADUDyCkK2cHKPwAVA8Dnk4AB6I4%2FAC08MhPlGaIe5lx9i%2BdgANKCahZJhDeEiUXB0fcKXi4HDmSNkbCid5oeyMct3JTqcY6WAGoyheZSaL7piJXBXIK%2BSKOaqceqCUKSQLlZjHJK4ABfPB0EAgJAbPIAfSgKEdwCgUAe9qwHh%2B91QTnu9qVvJ9SvRusmAAYflZ7dG4IByIjgPoT8qwVTsGcdxCQTAYcFQYZTcGjdgA7YxyFgRIXcMZjAxQGA4ER0DUuABJNTzXMiR11AwQOmDi6OkDkdB0pB%2BPwDocCOAoQt2Yx8JAsOCAC%2FIM3B1yxxxA5334Kg6VA%2BuhAJfkFb3vD6cwYEFXhaQQXoRcd%2BHoVnuxbZgAGRHAUY7Lu%2B4wIex55qe9YNqgb4fm6HpOJ2HooGw%2BBzA6IyTAAcig8yKC0IC0PM7ouqwRBzI6mIPLuhBQCAX7kCAUpwQhhaOrQCROJGcCAImE9z4kgPy4vxYaTBmL7GPB76cZg%2BCBv%2BZJ8YSQYiumNQKUgLRoHAXCoEIDYNlAOj6d2MC9tBX60KERnGXeG7wPc3GOn4wRun0Ayft%2BXzzOAnp%2Flpqg6cAekGY6CkCGxa68E5nHkfM37OuhVHoA8wk%2FD6qBcUkOBoLQ0C0CAoIXDcZBuvglzMKw76OgA1gY37pY8zxyMACh%2FBomh%2BgGVjnFctwlU8kwgmC8pRjKDLRjKcoJhasZwCN26TcBdKrVGV6gZmMkcag40KiKvIIiy2pisMepUnAaknUabIclyV1ppJO0NuBcCkPgoRQI6OnhF1%2BTzGCqB2LJH5gAyQqsmSnKXZqJ38myx3EmdKrinDpbAdtL7vZ932%2FVA%2F0fHkmhAzUIPGKDe2mClZm%2Fvcjjoid5iErdvpHVDZ18SBmkvmA5AMDlJ5LqeYKAEVEL7abpAYGaU9lU3JOVSAwiqTKqKUQeRDyM0tkIs7r3g%2FCdjioDTLo6AriGkCAWCq5xyumPMpiW5xp3ykrtAq%2FMxwu6g9i04GDOigj7MhoaXPo89KavbtisQ1skz7THcCmfpOUsouy5J8cxn84LObQSLhbx3AEvGVLYUy9n8ux4hysJ9hGtIYFOsI0bKN%2B7Tvs5mQWANx7DD2E73fCu7zqe0PPu167%2FIh1Hu5kLZSAj4qBvmPPNSL6Ey92HwMC3u96fO8YlaH46LIH3Fm7p6sJ%2BOdf5%2FqEAA)
 
----
+Theorem - `profHom_injective_kernel` Let $v = (x_1, x_2, x_3, x_4)$ be a point in the 4D integer lattice ($\mathbb{Z}^4$), and let $\text{projHom}(v) = (p_x, p_y, p_z)$ be defined by the mapping:
+
+$$p_x = x_1 + x_2 \left(\frac{\sqrt{3}}{2}\right) - x_4 \left(\frac{1}{2}\right)$$
+$$p_y = x_2 \left(\frac{1}{2}\right) + x_3 + x_4 \left(\frac{\sqrt{3}}{2}\right)$$
+$$p_z = x_1 \left(\frac{\sqrt{3}}{3}\right) + x_3 \left(\frac{\sqrt{3}}{3}\right) - x_4 \left(\frac{\sqrt{2}}{2}\right)$$
+
+If $\text{projHom}(v) = (0, 0, 0)$, then necessarily:
+
+$$v = (0, 0, 0, 0)$$
+
+We proved that this projection map has a trivial kernel. Because this mapping is linear, proving that the origin $(0,0,0,0)$ is the only 4D lattice point that collapses down to the 3D origin $(0,0,0)$ mathematically guarantees that no two distinct 4D lattice points ever collide or overlap when projected.
 
 ```lean
 ▼ mathlib-stable.lean:73:14
@@ -81,6 +91,8 @@ No messages.
 ```
 
 *Lattice kernel triviality verified successfully.*
+
+---
 
 ## ⚖️ License
 
