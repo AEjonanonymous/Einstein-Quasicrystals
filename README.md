@@ -40,10 +40,14 @@ We implemented a spatial interlock and overlap validation script in JavaScript t
 
 `ein_stein_quasicrystal.PNG`: What we are looking at is no longer a standard 2D shape forced into 3D, but a true 3D aperiodic Einstein Quasicrystal.
 
-✅ Machine Certification of Injectivity in Lean 4 *Lattice kernel triviality verified successfully.*
-
 Non-Repeating Global Structure: Because the physical projection matrix $M_\parallel$ embeds irrational trigonometric ratios ($\cos(30^\circ)$ and $\sin(30^\circ)$), every node and connecting strut aligns strictly with the tile's native hexagonal vector directions. Yet, as you rotate the camera, you’ll notice no single volumetric cell repeats identically because it possesses long-range order without periodicity.
 
 Faceted Side Walls: Unlike flat vertical extrusions that leave hollow sides, every 3D segment here is bounded by actual 4D lattice neighbors ($\Vert{}\Delta \mathbf{v}\Vert{} = 1$). The walls are intricate, oblique polyhedral facets that share the exact geometric DNA of the top and bottom faces.
 
 Quasicrystal Architecture: In physics, this is almost identical to how nature arranges atoms in real-world quasicrystals. The 1D internal phase space ($E_\perp$) acts like a geometric aperture, slicing through 4D space to reveal a complex 3D WebGL wireframe of connected nodes and struts.
+
+
+## ✅ Machine Certification of Injectivity and in Lean 4 
+
+*Lattice kernel triviality verified successfully.*
+
