@@ -89,9 +89,10 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 
 If you use or build upon this formalization, please cite it as follows:
 
-> Reed, Jonathan ƒ(n). (2026). *Bounding Singmaster's Conjecture via Constructive Type Transformation in Lean 4* (Version 1.0) [Data set/Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21660302
+> Reed, Jonathan ƒ(n). (2026). *Einstein Quasicrystals - A Lean 4 Certified Proof of 3D Aperiodic Einstein Quasicrystals by Triviality of the Projection Kernel* (Version 1.0) [Data set/Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21660302
 
 [![Field: Discrete Geometry](https://img.shields.io/badge/Field-Discrete-Geometry-blue.svg)](https://github.com/topics/affine-algebraic-geometry) [![Verified in Lean 4](https://img.shields.io/badge/Verified-Lean%204-purple.svg)](https://lean-lang.org/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+---
 © 2026 Jonathan ƒ(n) Reed. All rights reserved.
 
