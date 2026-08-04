@@ -11,21 +11,21 @@ Keywords: Mathematics, Discrete Geometry, 3D Aperiodic Monotiles, Einstein Tile,
 
 To generate true 3D volumetric structures without hollow sides, our pipeline executes the following:
 
-Step 1: 4D Grid Initialization
+**Step 1: 4D Grid Initialization**
 
 Defines a bounded integer grid in a 4-dimensional hypercubic space ($\Lambda = \mathbb{Z}^4$) within a radius $R$.
 
-Step 2: Hexagonal Projection Matrices
+**Step 2: Hexagonal Projection Matrices**
 
 Splits 4D space into physical 3D space ($E_\parallel$) and 1D internal perpendicular phase space ($E_\perp$).
 
 Embeds native hexagonal angles ($30^\circ$ and $60^\circ$ / $\pi/6$ and $\pi/3$) into the parallel projection matrix ($M_\parallel$).
 
-Step 3: Acceptance Window Filtering ($W$)
+**Step 3: Acceptance Window Filtering ($W$)**
 
 Filters 4D nodes using an acceptance window modulated by the hat's kite sub-component boundaries. Nodes whose internal phase ($t$) falls within $W$ survive.
 
-Step 4: Topological Reconstruction (Solving Hollow Sides)
+**Step 4: Topological Reconstruction (Solving Hollow Sides)**
 
 Connects surviving vertices based on original 4D Manhattan neighbor relationships ($\Vert{}\Delta \mathbf{v}\Vert{} = 1$). This automatically generates solid, non-hollow side walls and complex facets.
 
