@@ -34,7 +34,13 @@ We implemented a spatial interlock and overlap validation script in JavaScript t
 
 * 💻 `4d_to_3d_cut_and-project_ein_stein_quasicrystal_demo.html`
 
+### 📽️ Projection Visualizer
+
+![Einstein Quasiscrystal Projection](https://raw.githubusercontent.com/AEjonanonymous/ein-Stein-Quasicrystal/main/ein_stein_quasicrystal.PNG)
+
 `ein_stein_quasicrystal.PNG`: What we are looking at is no longer a standard 2D shape forced into 3D, but a true 3D aperiodic Einstein Quasicrystal.
+
+✅ Machine Certification of Injectivity *Lattice kernel triviality verified successfully.*
 
 Non-Repeating Global Structure: Because the physical projection matrix $M_\parallel$ embeds irrational trigonometric ratios ($\cos(30^\circ)$ and $\sin(30^\circ)$), every node and connecting strut aligns strictly with the tile's native hexagonal vector directions. Yet, as you rotate the camera, you’ll notice no single volumetric cell repeats identically because it possesses long-range order without periodicity.
 
