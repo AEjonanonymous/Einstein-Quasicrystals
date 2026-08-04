@@ -9,7 +9,7 @@ Keywords: Mathematics, Discrete Geometry, 3D Aperiodic Monotiles, Einstein Tile,
 
 **Keywords:** Mathematics, Discrete Geometry, 3D Aperiodic Monotiles, Einstein Tile, Hat Tile, de Bruijn Cut-and-Project Framework, Delaunay Triangulation, Meyer Set, Quasicrystals, Formal Verification, Interactive Theorem Proving, Lean 4, Injective Proof, Trivial Kernel.
 
-## The Core Problem & Intuition
+## 💡 The Core Problem & Intuition
 
 In mathematics, the Einstein problem asked whether a single, connected shape (a monotile) could tile a two-dimensional plane completely without any gaps or overlaps, but only in a non-periodic (aperiodic) pattern, meaning the pattern can never repeat, no matter how far it extends. Despite the name, it has nothing to do with Albert Einstein. Instead, it comes from the German word "ein Stein," which translates to one stone (or one shape). The 2D Einstein tile, specifically the "hat" and "spectre" discovered in 2022–2023, solved the long-standing aperiodic monotile problem for flat surfaces. 
 
@@ -17,8 +17,55 @@ In mathematics, the Einstein problem asked whether a single, connected shape (a 
 
 * **Our Intuition:** In aperiodic mathematics, 3D quasicrystalline structures are often mathematically defined as 3D projections of a higher-dimensional hypercubic lattice. Instead of forcing the 2D hat into 3D, we look at what 4D-to-3D projection grid would naturally yield a hat-like cross-section
 
+##  📐 de Bruijn 4D-to-3D-Cut-and-Project Framework
 
-## 📐 The 4-Step Computational Pipeline
+To lock down the math for a true 3D geometry derived from internal rules, we need to formalize the Cut-and-Project (de Bruijn style) framework adapted for hexagonal-based aperiodic structures. Because the hat monotile relies fundamentally on $30^\circ$ and $60^\circ$ ($\pi/6$ and $\pi/3$) symmetry, our parent lattice and projection matrices must embed these exact trigonometric ratios.
+
+We define our high-dimensional parent lattice as a 4-dimensional hypercubic integer lattice, $\Lambda = \mathbb{Z}^4$. Any node in this lattice is represented by an integer vector:
+
+$$\mathbf{v} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix} \in \mathbb{Z}^4$$
+
+We split 4D space into two orthogonal subspaces:
+
+* $E_\parallel$ (3D Physical Space): Where our volumetric hat structure will physically exist.
+* $E_\perp$ (1D Internal/Perpendicular Space): The internal phase space that governs the aperiodic shifting between layers.
+
+To map $\mathbb{Z}^4$ down to 3D physical space $E_\parallel$, we use a projection matrix $M_\parallel$ whose row vectors are irrational slopes containing the native hexagonal angles.
+
+Let $\theta = \frac{\pi}{6} (30^\circ)$. The basis vectors for the physical subspace are constructed using golden ratios or cosmic/hexagonal scaling factors ($\tau = \frac{1+\sqrt{5}}{2}$ or $\sqrt{3}$). For a hexagonal-aligned projection, the parallel projection matrix $M_\parallel$ ($3 \times 4$) takes the form:
+
+$$M_\parallel = 
+\frac{1}{\sqrt{4}} \begin{bmatrix} \cos(0) & \cos(\frac{2\pi}{3}) & \cos(\frac{4\pi}{3}) & \alpha_1 \\ \sin(0) & \sin(\frac{2\pi}{3}) & \sin(\frac{4\pi}{3}) & \alpha_2 \\ 0 & 0 & 0 & \alpha_3 \end{bmatrix}$$
+
+Where the fourth column coefficients ($\alpha_1, \alpha_2, \alpha_3$) dictate how the 4th dimension ($\mathbf{w}$) warps the vertical stacking and introduces the twist.
+The physical coordinate $\mathbf{r} \in \mathbb{R}^3$ for any 4D lattice point is:
+
+$$\mathbf{r} = M_\parallel \mathbf{v}$$
+
+Simultaneously, the orthogonal projection into 1D internal space $E_\perp$ is given by a complementary vector $M_\perp$ ($1 \times 4$):
+
+$$t = M_\perp \mathbf{v}$$
+
+A point $\mathbf{v} \in \mathbb{Z}^4$ is only accepted (meaning it physically manifests as part of our 3D aperiodic solid) if its perpendicular coordinate $t$ falls within a specific geometric boundary known as the acceptance window $W$:
+
+$$t \in W$$
+
+For a standard quasicrystal: $W$ is a simple symmetric interval $[-\Delta, \Delta]$.
+
+To get the Hat Geometry: The 1D window $W$ must be modulated by a periodic function or constrained by a polytope whose cross-section mirrors the 2D hat's kite-subdivision boundaries. This means $W$ is not a static point; it is a segmented interval whose boundaries change dynamically based on the orientation angle $\theta$ in the $xy$ plane.
+
+Once the 4D points are projected into 3D space via the acceptance window, we obtain a discrete set of 3D vertices:
+
+$$V = \{ \mathbf{r} \mid M_\perp \mathbf{v} \in W \}$$
+
+To turn this point cloud into a solid, non-hollow 3D structure with proper side walls:
+We apply Delaunay Triangulation (or its dual, Voronoi tessellation) constrained to the 4D lattice connectivity.
+
+Because the parent lattice $\mathbb{Z}^4$ defines direct neighborhood links (edges between points where $\Vert{}\Delta \mathbf{v}\Vert{} = 1$), we can map those 4D edges directly into 3D line segments.
+
+The side walls are automatically generated as the 2D faces bounded by these interconnected 4D lattice edges, ensuring the sides share the exact same mathematical complexity and slope variations as the top and bottom caps.
+
+## 🏗️ The 4-Step Computational Pipeline
 
 To generate true 3D volumetric structures without hollow sides, our pipeline executes the following:
 
