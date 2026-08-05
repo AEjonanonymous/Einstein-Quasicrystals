@@ -192,8 +192,6 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 
 ## 📖 Citation
 
-If you use or build upon this formalization, please cite it as follows:
-
 > Reed, Jonathan ƒ(n). (2026). *Einstein Quasicrystals - A Lean 4 Certified Proof of 3D Aperiodic Einstein Quasicrystals by Triviality of the Projection Kernel* (Version 1.0) [Data set/Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21796509
 
 ---
