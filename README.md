@@ -17,7 +17,7 @@ In mathematics, the Einstein problem asked whether a single, connected shape (a 
 
 * **Our Intuition:** In aperiodic mathematics, 3D quasicrystalline structures are often mathematically defined as 3D projections of a higher-dimensional hypercubic lattice. Instead of forcing the 2D hat into 3D, we look at what 4D-to-3D projection grid would naturally yield a hat-like cross-section
 
-##  📐 de Bruijn 4D-to-3D-Cut-and-Project Framework
+##  📐 de Bruijn (4D → 3D) Cut-and-Project Framework
 
 To lock down the math for a true 3D geometry derived from internal rules, we need to formalize the Cut-and-Project (de Bruijn style) framework adapted for hexagonal-based aperiodic structures. Because the hat monotile relies fundamentally on $30^\circ$ and $60^\circ$ ($\pi/6$ and $\pi/3$) symmetry, our parent lattice and projection matrices must embed these exact trigonometric ratios.
 
