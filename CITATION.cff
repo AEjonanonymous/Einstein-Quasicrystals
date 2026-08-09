@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this research as follows."
+authors:
+  - name: "Jonathan ƒ(n)"
+title: "Einstein Quasicrystals - A Lean 4 Certified Proof of 3D Aperiodic Einstein Quasicrystals by Triviality of the Projection Kernel"
+version: 1.0
+doi: 10.5281/zenodo.21796509
+date-released: 2026-08-04
