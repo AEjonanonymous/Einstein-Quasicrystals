@@ -199,11 +199,12 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 ## 📦 Software Engine Intellectual Property (IP) Package
 
 * 💾 **`3D_aperiodic_quasicrystal_engine.hpp`:** The core computational engine constitutes a proprietary **high-performance, header-only C++17 software IP package** engineered for seamless integration into industrial CAD pipelines, simulation software, and additive manufacturing workflows. 
+
 * 💾 **`3D_aperiodic_testbench.cpp`**: Executes a test sequence that sets up engine configurations, builds a volumetric aperiodic mesh, counts the resulting triangle faces, and verifies manifold solid model export.
 
-* **Fully Parameterizable Config** (`EngineConfig`): Fine-tune spatial scales, iteration bounds ($R$), 1D internal phase acceptance windows, and structural strut dimensions (`tube_radius` and polygon complexity).
-* **Graded Density Hook:** Features a custom lambda-filter hook (`custom_filter`) allowing engineers to dynamically modulate porosity, density, and structural gradients across the volume.
-* **Manifold STL Export:** Automatically computes vertex normals and generates watertight, non-hollow triangular meshes ready for industrial slicing and rendering.
+    * **Fully Parameterizable Config** (`EngineConfig`): Fine-tune spatial scales, iteration bounds ($R$), 1D internal phase acceptance windows, and structural strut dimensions (`tube_radius` and polygon complexity).
+    * **Graded Density Hook:** Features a custom lambda-filter hook (`custom_filter`) allowing engineers to dynamically modulate porosity, density, and structural gradients across the volume.
+    * **Manifold STL Export:** Automatically computes vertex normals and generates watertight, non-hollow triangular meshes ready for industrial slicing and rendering.
 
 ### 🏭 High-Value Commercial Applications
 
