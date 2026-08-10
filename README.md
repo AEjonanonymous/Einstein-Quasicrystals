@@ -229,7 +229,7 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 * **Open-Source License:** This software IP package is released under the **GNU Affero General Public License v3.0 (AGPL-3.0)**, ensuring open collaboration and network-copyleft protection for academic and open-source projects.
 * **Commercial Dual-Licensing:** For enterprise organizations, manufacturers, or startups wishing to embed the `AperiodicGeometryEngine` into closed-source commercial software pipelines, proprietary commercial licenses and custom enterprise exceptions are available.
 
-**For commerical licensing inquiries please contact:**
+**For commercial licensing inquiries please contact:**
 
 Licensing Agent - J.E. Randolph 📧 [700josh.r@gmail.com](mailto:700josh.r@gmail.com)
 
