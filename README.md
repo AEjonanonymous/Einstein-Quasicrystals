@@ -1,5 +1,5 @@
 # <div align="center">💎 Einstein ("ein-Stein") Quasicrystals 💎 
-## <div align="center"><i>A Lean 4 Certified Proof of 3D Aperiodic Einstein Quasicrystals by Triviality of the Projection Kernel.</i>
+## <div align="center"><i>A Lean 4 Certified Proof of 3D Aperiodic Monotiles by Triviality of the Projection Kernel.</i>
 
 ## <div align="center">📌 Abstract
 
